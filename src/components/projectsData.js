@@ -55,6 +55,17 @@ export const websites = [
     featured: true
   },
   {
+    title: "Ciniloka",
+    type: "Website",
+    category: "web",
+    description: "Entertainment and movie database portal featuring real-time showtimes, movie details, reviews, and interactive listings.",
+    link: "https://www.ciniloka.com/",
+    github: "#",
+    techs: ["Next.js", "Tailwind CSS", "TMDB API"],
+    color: "#e11d48",
+    featured: true
+  },
+  {
     title: "Fit Garage",
     type: "Website",
     category: "web",
