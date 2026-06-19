@@ -64,32 +64,34 @@ export default function Home() {
       <Navbar />
 
       <main className="main-content">
-        {/* Hero */}
         <section ref={heroRef} className="hero-section">
-          <div className="hero-3d-container">
-            <Hero3D />
-          </div>
-          <div className="hero-overlay" />
-          <div className="hero-content" ref={heroContentRef}>
-            <span className="badge animate-hero">Enterprise Systems & Web Developer</span>
-            <h1 className="hero-title animate-hero">
-              Engineering Custom <span className="gradient-text">Business Software</span> & Portals
-            </h1>
-            <p className="hero-desc animate-hero">
-              I design and build tailor-made digital systems &mdash; specializing in industrial mill software, stock-tracking dashboards, clinical portals, and custom web applications.
-            </p>
-            <div className="hero-actions animate-hero">
-              <a href="#projects" className="btn-primary" onClick={(e) => { e.preventDefault(); const el = document.getElementById("projects"); if(el) window.scrollTo({ top: el.getBoundingClientRect().top - 80 + window.scrollY, behavior: "smooth" }); }}>
-                Explore My Work
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-              <a href="#contact" className="btn-secondary" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if(el) window.scrollTo({ top: el.getBoundingClientRect().top - 80 + window.scrollY, behavior: "smooth" }); }}>
-                Let&apos;s Talk
-              </a>
+          <div className="hero-grid-container">
+            <div className="hero-text-side" ref={heroContentRef}>
+              <span className="badge animate-hero">Enterprise Systems & Web Developer</span>
+              <h1 className="hero-title animate-hero">
+                Engineering Custom <span className="gradient-text">Business Software</span> & Portals
+              </h1>
+              <p className="hero-desc animate-hero">
+                I design and build tailor-made digital systems &mdash; specializing in industrial mill software, stock-tracking dashboards, clinical portals, and custom web applications.
+              </p>
+              <div className="hero-actions animate-hero">
+                <a href="#projects" className="btn-primary" onClick={(e) => { e.preventDefault(); const el = document.getElementById("projects"); if(el) window.scrollTo({ top: el.getBoundingClientRect().top - 80 + window.scrollY, behavior: "smooth" }); }}>
+                  Explore My Work
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </a>
+                <a href="#contact" className="btn-secondary" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if(el) window.scrollTo({ top: el.getBoundingClientRect().top - 80 + window.scrollY, behavior: "smooth" }); }}>
+                  Let&apos;s Talk
+                </a>
+              </div>
             </div>
-            <div className="hero-marquee animate-hero">
+            <div className="hero-3d-side animate-hero">
+              <Hero3D />
+            </div>
+          </div>
+          <div className="hero-marquee-container animate-hero">
+            <div className="hero-marquee">
               <span>Next.js &bull; React &bull; Node.js &bull; Mill Systems &bull; Stock Dashboards &bull; Clinical Portals &bull; Tailwind CSS &bull; Database Design &bull; </span>
               <span>Next.js &bull; React &bull; Node.js &bull; Mill Systems &bull; Stock Dashboards &bull; Clinical Portals &bull; Tailwind CSS &bull; Database Design &bull; </span>
             </div>

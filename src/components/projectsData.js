@@ -47,7 +47,7 @@ export const websites = [
     title: "Unban Brique",
     type: "Website",
     category: "web",
-    description: "Immersive architectural showroom and brick manufacturing showcase featuring high-end design assets.",
+    description: "Creative interior design studio showcase featuring custom residential projects, luxury space curation, and high-end design assets.",
     link: "https://unban-brique.vercel.app/",
     github: "#",
     techs: ["Next.js", "Three.js", "Tailwind CSS"],
